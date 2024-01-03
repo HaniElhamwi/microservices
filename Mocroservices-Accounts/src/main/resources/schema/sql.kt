@@ -1,4 +1,0 @@
-package schema
-
-class sql {
-}
