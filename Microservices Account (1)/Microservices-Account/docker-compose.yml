@@ -1,0 +1,30 @@
+services:
+  accounts:
+    image: "hani/accounts-ms"
+    container_name: "accounts-ms"
+    ports:
+      - "3000:3000"
+    deploy:
+      resources:
+        limits:
+            memory: 50M
+
+  loans:
+    image: "hani/loans-ms"
+    container_name: "loans-ms"
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 50M
+
+  cards:
+    image: "hani/cards-ms"
+    container_name: "cards-ms"
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 50M
